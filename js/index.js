@@ -10,8 +10,8 @@ fetch('./data/steps.csv')
   .then(function(text) { 
     data = JSC.csv2Json(text); 
     let dateRange = [ 
-      new Date('1/1/2022'), 
-      new Date('12/31/2022') 
+      new Date('1/1/2017'), 
+      new Date('12/31/2017') 
     ]; 
     /* Filter out dates outside 2022*/
     data = data.filter(function(entry) { 
