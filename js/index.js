@@ -10,8 +10,8 @@ fetch('./data/steps.csv')
   .then(function(text) { 
     data = JSC.csv2Json(text); 
     let dateRange = [ 
-      new Date('1/1/2017'), 
-      new Date('12/31/2017') 
+      new Date('1/1/2022'), 
+      new Date('12/31/2022') 
     ]; 
     /* Filter out dates outside 2022*/
     data = data.filter(function(entry) { 
@@ -87,10 +87,10 @@ function addTicks() {
     { 
       debug: true, 
       type: 'horizontal calendar year solid', 
-      title_label_text: 'Daily Steps 2017', 
+      title_label_text: 'Daily Steps 2022', 
       data: './data/steps.csv', 
       calendar: { 
-        range: ['1/1/2017', '12/31/2017'], 
+        range: ['1/1/2022', '12/31/2022'], 
         defaultEdgePoint: { 
           tooltip: '', 
           mouseTracking: false
